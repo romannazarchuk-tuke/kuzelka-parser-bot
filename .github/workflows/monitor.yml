@@ -2,8 +2,10 @@ name: Driving School Monitor
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # Запуск каждые 20 минут
-  workflow_dispatch: # Кнопка ручного запуска
+    # '*/15' — каждые 15 минут
+    # '5-20' — это часы работы (с 5:00 до 20:59 по UTC, что равно 7:00–22:59 в Словакии)
+    - cron: '*/15 5-20 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
