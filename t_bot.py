@@ -14,8 +14,7 @@ from zoneinfo import ZoneInfo
 # ==========================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-USERNAME = '051201/9321'
-# Берем данные из переменных окружения (GitHub Secrets)
+USERNAME = 'USERNAME'
 PASSWORD = os.getenv('KUZELKA_PASSWORD') 
 BOT_TOKEN = os.getenv('BOT_TOKEN') 
 
